@@ -1,7 +1,7 @@
 # My Personal Research on Control & Artificial Intelligence Team 
 
 This repository contains only the codes and documents that I have researched while working on a mars rover project.
-
+Resources for Robotics, AI & Machine Vision : [LINK](https://drive.google.com/drive/folders/15hlrJVCkR0A-OqXL3u-sM8IN8gX-_Gwe?usp=sharing)
 ### GUI
 1. PyQt GUI with basic operations, camera feeds, and GPS with map readout
 2. Record data from camera, GPS, and science system
