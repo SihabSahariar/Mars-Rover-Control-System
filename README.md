@@ -27,6 +27,9 @@ Resources for Robotics, AI & Machine Vision : [LINK](https://drive.google.com/dr
 ### Sensor Graph GUI
 1. Developed GUI for Science Sensor Box
 
+### Image Stiching 
+1. Paneroma Image From Static Image
+
 ### PySerial Codebase
 1. Control System Based on PySerial (Multiple Motor Drivers Implemented) 
 
