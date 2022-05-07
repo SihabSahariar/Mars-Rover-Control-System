@@ -18,7 +18,7 @@ Resources for Robotics, AI & Machine Vision : [LINK](https://drive.google.com/dr
 ### Test Socket
 1. Socket System for Mars Rover Control 
 
-###Control Hardwares 
+### Control Hardwares 
 1. Basic Hardwares & Pin Diagram of the Mongol-Tori Mars Rover 
 
 ### Motor Driver Codes
