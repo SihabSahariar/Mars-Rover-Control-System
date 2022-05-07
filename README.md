@@ -26,7 +26,7 @@ This repository contains only the codes and documents that I have researched whi
 
 ### Sensor Graph GUI
 1. Developed GUI for Science Sensor Box
-2. 
+
 ### PySerial Codebase
 1. Control System Based on PySerial (Multiple Motor Drivers Implemented) 
 
