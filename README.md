@@ -1,6 +1,6 @@
-# Control & Software (BRACU MONGOL-TORI) Team Research
+# My Personal Research on Control & Artificial Intelligence Team , BRACU MONGOL-TORI (OCTOBER 2020 - MARCH 2022)
 
-All software in development. See [main repo](https://github.com/BRACU-DICHARI) for code deployed on the rover.
+This repository contains only the codes and documents that I have researched while working on Mongol-Tori Team as a Senior member and later as the Sub-Team Lead.
 
 ### GUI
 1. PyQt GUI with basic operations, camera feeds, and GPS with map readout
@@ -11,6 +11,31 @@ All software in development. See [main repo](https://github.com/BRACU-DICHARI) f
 1. Map GPS waypoints
 2. "Implement differential GNSS for higher accuracy"?
 3. Find direct route between waypoints
+
+### GPS Rover
+1. Latitude & Longitude based navigation (Motor Driver Code Included) 
+
+### Mongol Test Socket
+1. Socket System for Mars Rover Control 
+
+### Mongol Tori Control Hardwares 
+1. Basic Hardwares & Pin Diagram of the Mongol-Tori Mars Rover 
+
+### Motor Driver Codes
+1. Implementation of various motor driver (Testing Code Included) 
+
+### Sensor Graph GUI
+1. Developed GUI for Science Sensor Box
+2. 
+### PySerial Codebase
+1. Control System Based on PySerial (Multiple Motor Drivers Implemented) 
+
+### Rover ROS
+1. Control System Based on ROS (Neotic) 
+
+### ARM & Navigation Combined 
+1. Combined system of ARM Control & Rover Wheel Control using ROS
+
 
 ### Autonomous Navigation
 1. Simple "wall detection" using depth camera
