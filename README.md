@@ -1,6 +1,6 @@
-# My Personal Research on Control & Artificial Intelligence Team , BRACU MONGOL-TORI (OCTOBER 2020 - MARCH 2022)
+# My Personal Research on Control & Artificial Intelligence Team 
 
-This repository contains only the codes and documents that I have researched while working on Mongol-Tori Team as a Senior member and later as the Sub-Team Lead.
+This repository contains only the codes and documents that I have researched while working on a mars rover project.
 
 ### GUI
 1. PyQt GUI with basic operations, camera feeds, and GPS with map readout
@@ -15,10 +15,10 @@ This repository contains only the codes and documents that I have researched whi
 ### GPS Rover
 1. Latitude & Longitude based navigation (Motor Driver Code Included) 
 
-### Mongol Test Socket
+### Test Socket
 1. Socket System for Mars Rover Control 
 
-### Mongol Tori Control Hardwares 
+###Control Hardwares 
 1. Basic Hardwares & Pin Diagram of the Mongol-Tori Mars Rover 
 
 ### Motor Driver Codes
