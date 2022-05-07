@@ -1,0 +1,55 @@
+<launch>
+
+  <!-- launch gps -->
+  <include file="$(find nmea_navsat_driver)/launch/nmea_serial_driver.launch">
+    <arg name="port" default="/dev/ttyTHS1" />
+    <arg name="baud" default="9600" />
+    <arg name="frame_id" default="gps" />
+    <arg name="use_GNSS_time" default="False" />
+    <arg name="time_ref_source" default="gps" />
+    <arg name="useRMC" default="False" />
+  </include>
+
+  
+  <!-- launch imu -->
+  <include file="$(find ros_imu_bno055)/launch/imu.launch">
+    <arg name="serial_port" default="/dev/ttyUSB0" />
+    <arg name="frame_id" default="imu_link" />
+    <arg name="operation_mode" default="IMU"/>
+    <arg name="oscillator" default="INTERNAL" />
+    <arg name="reset_orientation" default="true" />
+    <arg name="frequency" default="10" /> 
+    <arg name="use_magnetometer" default="false" />
+    <arg name="use_temperature" default="false" /> 
+  </include>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="bl_imu" args="0 0 0 0 0 0 1 base_link imu_link" />
+
+  <!-- robot_localization EKF node for the odom frame -->
+  <node pkg="robot_localization" type="ekf_localization_node" name="robot_localization_ekf_node_odom" clear_params="true">
+    <param name="frequency" value="10" />  
+    <param name="sensor_timeout" value="0.2" />  
+    <param name="two_d_mode" value="true" />
+    <param name="publish_tf" value="true" />
+    <param name="map_frame" value="map" />
+    <param name="odom_frame" value="odom" />
+    <param name="base_link_frame" value="base_link" />
+    <param name="world_frame" value="odom" />
+    <param name="print_diagnostics" value="true" />
+    <remap from="odometry/filtered" to="odometry/filtered_twist" />
+    <param name="imu0" value="/imu/data" />
+    <param name="imu0_differential" value="false" />
+    <param name="imu0_relative" value="true" />
+    <param name="imu0_queue_size" value="10" />
+    <param name="imu0_remove_gravitational_acceleration" value="true" />
+    <rosparam param="imu0_config">[false, false, false, 
+                                   true, true, true,
+                                   false, false, false, 
+                                   true, true, true,
+                                   false, false, false]</rosparam>
+    <param name="print_diagnostics" value="true" />
+    <param name="debug" value="true" />
+  </node>
+
+
+</launch>
